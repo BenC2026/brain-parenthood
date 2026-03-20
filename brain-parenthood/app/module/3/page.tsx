@@ -61,10 +61,10 @@ export default function Module3Page() {
             ← Back to Modules
           </Link>
           <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>
-            Module 3: How to Put Your Best Foot Forward
+            Module 3: Team Mindfulness
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>
-            Week 3 &bull; Mastering effective communication
+            Weeks 2&ndash;3 &bull; Being mindful of team routines and how you show up collectively
           </p>
         </div>
       </div>
@@ -129,26 +129,27 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>
-          How to Put Your Best Foot Forward
+          Team Mindfulness
         </h2>
         <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>
-          Verbal and non-verbal communication for personal and professional success
+          Shifting from individual to collective awareness
         </p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Every interaction is an opportunity to build trust, credibility, and connection. Whether
-          you are pitching to investors, leading your team, or networking at an event, your
-          communication style shapes how others perceive and respond to you. This module gives
-          you the tools to show up confidently in every professional setting.
+          Individual mindfulness is the foundation — but a team that operates mindfully together
+          is far greater than the sum of its parts. This module turns attention outward, helping
+          you examine the habits and routines your team has already formed, understand how those
+          patterns affect collective performance, and introduce small, intentional changes that
+          improve team creativity, focus, and attention.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          From first impressions to sustained professional presence, this module covers the verbal
-          and non-verbal skills that make communication powerful. You will practice adapting your
-          message to different audiences and situations, and leave with a clear plan for putting
-          your best foot forward every day.
+          Over this phase you will map your team's existing routines, identify where mindfulness
+          is already present and where it is missing, and design one practical team habit to introduce
+          this week. The goal is a team that notices stress collectively, pauses before reacting, and
+          creates space for deeper collaboration.
         </p>
       </div>
 
@@ -164,19 +165,19 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
               <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>
-                <strong style={{ color: '#111827' }}>First Impressions:</strong> Shape how others perceive you from the start
+                <strong style={{ color: '#111827' }}>Shared Awareness:</strong> Teams that notice stress together recover faster
               </p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
               <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>
-                <strong style={{ color: '#111827' }}>Professional Presence:</strong> Project confidence and authority in any room
+                <strong style={{ color: '#111827' }}>Better Decisions:</strong> Pausing before reacting leads to more considered choices
               </p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
               <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>
-                <strong style={{ color: '#111827' }}>Effective Communication:</strong> Get your message across clearly and persuasively
+                <strong style={{ color: '#111827' }}>Collective Performance:</strong> Mindful routines unlock creativity, focus, and flow
               </p>
             </div>
           </div>
@@ -192,15 +193,15 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Master verbal communication techniques for professional settings</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Assess how mindful your team's current working routines are</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Improve non-verbal communication awareness</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Understand how team habits affect collective stress and performance</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Build a strong and authentic professional presence</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Introduce one mindful team routine that improves focus and creativity</p>
             </div>
           </div>
         </div>
@@ -233,11 +234,10 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [formData, setFormData] = useState({
-    verbalSkills: 5,
-    nonVerbalAwareness: 5,
-    professionalConfidence: 5,
-    audienceAdaptation: 5,
-    communicationChallenge: '',
+    teamWorkingPatterns: 5,
+    collectiveStress: 5,
+    decisionPausing: 5,
+    creativityCollaboration: 5,
   });
 
   useEffect(() => {
@@ -247,51 +247,44 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
   const questions = [
     {
-      id: 'verbalSkills',
-      title: 'Verbal Communication Skills',
-      description: 'Rate your verbal communication skills in professional settings.',
+      id: 'teamWorkingPatterns',
+      title: 'Team Routine Awareness',
+      description: 'How mindful is your team of its own working patterns and routines?',
       type: 'slider' as const,
       min: 1,
       max: 10,
-      minLabel: 'Need Significant Work',
-      maxLabel: 'Very Strong',
-    },
-    {
-      id: 'nonVerbalAwareness',
-      title: 'Non-Verbal Communication Awareness',
-      description: 'Rate your awareness of non-verbal communication (body language, tone, eye contact).',
-      type: 'slider' as const,
-      min: 1,
-      max: 10,
-      minLabel: 'Very Low Awareness',
+      minLabel: 'Not at All Aware',
       maxLabel: 'Highly Aware',
     },
     {
-      id: 'professionalConfidence',
-      title: 'Professional Confidence',
-      description: 'How confident are you in professional settings such as meetings, pitches, or networking?',
+      id: 'collectiveStress',
+      title: 'Collective Stress Awareness',
+      description: 'How well does your team notice and address collective stress?',
       type: 'slider' as const,
       min: 1,
       max: 10,
-      minLabel: 'Not Confident',
-      maxLabel: 'Very Confident',
+      minLabel: 'Rarely Noticed',
+      maxLabel: 'Always Addressed',
     },
     {
-      id: 'audienceAdaptation',
-      title: 'Adapting to Your Audience',
-      description: 'How well do you adapt your communication style depending on who you are talking to?',
+      id: 'decisionPausing',
+      title: 'Pausing Before Decisions',
+      description: 'How often does your team pause to reflect before making decisions?',
       type: 'slider' as const,
       min: 1,
       max: 10,
-      minLabel: 'One Size Fits All',
-      maxLabel: 'Highly Adaptable',
+      minLabel: 'Almost Never',
+      maxLabel: 'Almost Always',
     },
     {
-      id: 'communicationChallenge',
-      title: 'A Communication Challenge',
-      description: 'Describe a communication challenge you recently experienced.',
-      type: 'textarea' as const,
-      placeholder: 'What happened and what made it difficult?',
+      id: 'creativityCollaboration',
+      title: 'Creative Collaboration',
+      description: 'How creatively and collaboratively does your team currently work?',
+      type: 'slider' as const,
+      min: 1,
+      max: 10,
+      minLabel: 'Rarely Creative',
+      maxLabel: 'Highly Creative',
     },
   ];
 
@@ -318,9 +311,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   };
 
   const isAnswered = () => {
-    const value = formData[currentQ.id as keyof typeof formData];
-    if (currentQ.type === 'slider') return true;
-    return (value as string) !== '';
+    return true; // all questions are sliders
   };
 
   const sliderValue = formData[currentQ.id as keyof typeof formData] as number;
@@ -378,15 +369,6 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
             </div>
           )}
 
-          {currentQ.type === 'textarea' && (
-            <textarea
-              value={formData[currentQ.id as keyof typeof formData] as string}
-              onChange={(e) => setFormData({ ...formData, [currentQ.id]: e.target.value })}
-              placeholder={currentQ.placeholder}
-              rows={5}
-              style={{ width: '100%', padding: '16px 20px', fontSize: '15px', color: '#111827', border: '2px solid #E5E7EB', borderRadius: '12px', outline: 'none', resize: 'none', lineHeight: '1.6', boxSizing: 'border-box' }}
-            />
-          )}
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '24px', borderTop: '1px solid #E5E7EB' }}>
@@ -408,7 +390,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ verbalSkill: '', nonVerbalGoal: '', presenceGoal: '' });
+  const [goals, setGoals] = useState({ teamRoutine: '', focusMeasurement: '', mindfulTeamVision: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -416,9 +398,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'verbalSkill', title: 'Verbal Communication Goal', description: 'What verbal communication skill will you focus on improving this week?', type: 'text' as const, placeholder: 'e.g., Speak more concisely and avoid filler words in meetings' },
-    { id: 'nonVerbalGoal', title: 'Non-Verbal Communication Goal', description: 'How will you improve your non-verbal communication?', type: 'textarea' as const, placeholder: 'Describe what you will work on — body language, eye contact, tone...' },
-    { id: 'presenceGoal', title: 'Professional Presence Goal', description: 'What professional presence goal will you set for yourself this week?', type: 'text' as const, placeholder: 'e.g., Introduce myself confidently at the next networking event' },
+    { id: 'teamRoutine', title: 'Team Routine to Introduce', description: 'What one team routine will you suggest or introduce this week?', type: 'text' as const, placeholder: 'e.g., A 2-minute check-in at the start of every stand-up' },
+    { id: 'focusMeasurement', title: 'Measuring Focus & Attention', description: 'How will you and your team measure improvements in focus or attention?', type: 'text' as const, placeholder: 'e.g., Track interruptions per meeting or rate focus after each session' },
+    { id: 'mindfulTeamVision', title: 'Your Mindful Team Vision', description: 'What does a more mindful team look like for you in practice?', type: 'textarea' as const, placeholder: 'Describe what you would see, hear, and feel differently in your team...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -498,7 +480,7 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You have taken steps to sharpen your communication skills and professional presence. Keep practising every interaction.
+          Your team's mindful journey has begun. Small intentional routines compound into lasting change.
         </p>
       </div>
 
@@ -506,9 +488,9 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Practise your verbal goal', desc: 'Apply it in your next meeting or conversation' },
-            { num: '2', title: 'Check your non-verbal signals', desc: 'Be mindful of body language in real situations' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'The Nuts and Bolts' },
+            { num: '1', title: 'Share your mindfulness goal with at least one teammate', desc: 'Accountability makes habits stick' },
+            { num: '2', title: 'Suggest one small team routine change in your next meeting', desc: 'Start with something low-effort and easy to repeat' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Resilience`, desc: 'Next you\'ll build the capacity to bounce back from setbacks together' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

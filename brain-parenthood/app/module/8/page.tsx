@@ -42,8 +42,8 @@ export default function Module8Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 8: Positive Attitude</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 8 &bull; Cultivating an optimistic outlook</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 8: Innovation and Growth Mindset</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 8&ndash;9 &bull; Applying team skills to real business challenges</p>
         </div>
       </div>
 
@@ -86,22 +86,25 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Positive Attitude</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Assess and improve your overall outlook on life and work</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Innovation and Growth Mindset</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Collective brain growth — applying your trained team to real problems</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Your attitude is the lens through which you experience everything. A positive outlook
-          does not mean ignoring problems — it means approaching challenges with confidence and
-          possibility thinking. This module helps you assess your current mindset, identify unhelpful
-          thought patterns, and build daily habits that cultivate genuine optimism and resilience.
+          Everything you have built so far — mindfulness, resilience, psychological safety,
+          and trust — has been preparation for this. Now it is time to put that trained collective
+          brain to work. This module introduces the innovation and growth phase, where your team
+          applies all of its skills to real business challenges through creative brainstorming
+          sessions that encourage divergent thinking, new ideas, and the freedom to think without fear.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will explore the science of optimism, practise cognitive reframing techniques to
-          shift negative thought patterns, and develop a daily gratitude practice that trains
-          your brain to notice and amplify the positive in your work and life.
+          Over Weeks 8 and 9 you will run structured brainstorming sessions designed to unlock
+          divergent thinking — generating many ideas before narrowing to the best ones. You will
+          use mindfulness techniques to stay present and open during creative sessions, apply a
+          growth mindset to reframe obstacles as opportunities, and discover how a psychologically
+          safe team consistently outperforms one operating under fear of judgement.
         </p>
       </div>
 
@@ -113,9 +116,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Positive Attitude Improves Resilience:', body: 'Optimists recover from setbacks faster and more fully' },
-              { title: 'Optimism Drives Better Outcomes:', body: 'Believing success is possible is the first step to achieving it' },
-              { title: 'Mindset Shapes Experience:', body: 'How you think determines how you feel and act' },
+              { title: 'Safety Unlocks Creativity:', body: 'Teams that feel safe share wilder ideas — and the best ideas often start wild' },
+              { title: 'Divergent Thinking Finds Better Solutions:', body: 'Quantity of ideas first; quality filtering second' },
+              { title: 'Mindfulness Sharpens Creative Focus:', body: 'A present mind makes more unexpected connections' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -132,9 +135,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              'Identify your dominant negative thought patterns',
-              'Practise cognitive reframing to shift your perspective',
-              'Build a daily gratitude habit that sticks',
+              'Assess how openly and creatively your team currently brainstorms',
+              'Run a structured divergent thinking session on a real business challenge',
+              'Set a ground rule that makes it safe to share any idea in your team',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -156,7 +159,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ generalOutlook: 5, gratitudePractice: 5, reframingAbility: 5, resilience: 5, negativePattern: '' });
+  const [formData, setFormData] = useState({ ideaSharingOpenness: 5, fearOfJudgement: 5, brainstormingEffectiveness: 5, mindfulnessInCreativity: 5 });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -164,11 +167,10 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'generalOutlook', title: 'General Outlook', description: 'How positive is your general outlook on life and work?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Negative', maxLabel: 'Very Positive' },
-    { id: 'gratitudePractice', title: 'Gratitude Practice', description: 'How often do you consciously practise gratitude?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Never', maxLabel: 'Daily Habit' },
-    { id: 'reframingAbility', title: 'Reframing Negative Situations', description: 'How well do you reframe negative situations to find a constructive perspective?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely Manage', maxLabel: 'Do It Naturally' },
-    { id: 'resilience', title: 'Resilience When Things Go Wrong', description: 'How resilient are you when things do not go as planned?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Struggle a Lot', maxLabel: 'Bounce Back Fast' },
-    { id: 'negativePattern', title: 'Negative Thought Pattern', description: 'What negative thought pattern do you most want to change?', type: 'textarea' as const, placeholder: 'Describe the pattern and how it shows up in your life...' },
+    { id: 'ideaSharingOpenness', title: 'Openness to New Ideas', description: 'How openly does your team share new or unconventional ideas?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely Happens', maxLabel: 'Openly and Often' },
+    { id: 'fearOfJudgement', title: 'Fear of Judgement', description: 'How much fear of judgement exists in your team when someone proposes a new idea?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very High Fear', maxLabel: 'No Fear at All' },
+    { id: 'brainstormingEffectiveness', title: 'Brainstorming Effectiveness', description: 'How effectively does your team brainstorm together?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely Productive', maxLabel: 'Very Effective' },
+    { id: 'mindfulnessInCreativity', title: 'Mindfulness During Creative Sessions', description: 'How often does your team apply mindfulness during creative or problem-solving sessions?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Never', maxLabel: 'Consistently' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -179,7 +181,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
   const handleNext = () => { const _labeled = questions.map(q => ({ title: q.title, answer: formData[q.id as keyof typeof formData] })); localStorage.setItem(`brainParenthood_module${moduleId}_assessment`, JSON.stringify({ ...formData, _labeled })); if (currentQuestion < questions.length - 1) { setCurrentQuestion(currentQuestion + 1); } else { saveModuleAnswers(moduleId, 'assessment', { ...formData, _labeled }); onNext(); } };
   const handlePrevious = () => { if (currentQuestion > 0) { setCurrentQuestion(currentQuestion - 1); } else { onBack(); } };
-  const isAnswered = () => { const v = formData[currentQ.id as keyof typeof formData]; if (currentQ.type === 'slider') return true; return (v as string) !== ''; };
+  const isAnswered = () => true; // all questions are sliders
 
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -211,10 +213,6 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
               </div>
             </div>
           )}
-          {currentQ.type === 'textarea' && (
-            <textarea value={formData[currentQ.id as keyof typeof formData] as string} onChange={(e) => setFormData({ ...formData, [currentQ.id]: e.target.value })} placeholder={currentQ.placeholder} rows={5}
-              style={{ width: '100%', padding: '16px 20px', fontSize: '15px', color: '#111827', border: '2px solid #E5E7EB', borderRadius: '12px', outline: 'none', resize: 'none', lineHeight: '1.6', boxSizing: 'border-box' }} />
-          )}
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '24px', borderTop: '1px solid #E5E7EB' }}>
           <button onClick={handlePrevious} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 20px', color: '#374151', fontWeight: '600', borderRadius: '12px', border: 'none', cursor: 'pointer', backgroundColor: 'transparent', fontSize: '15px' }}>← Back</button>
@@ -229,7 +227,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ gratitudePractice: '', reframingGoal: '' });
+  const [goals, setGoals] = useState({ businessChallenge: '', sessionStructure: '', safetyRule: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -237,8 +235,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'gratitudePractice', title: 'Gratitude Practice', description: 'What gratitude practice will you adopt this week?', type: 'text' as const, placeholder: 'e.g., Write 3 things I am grateful for before bed each night' },
-    { id: 'reframingGoal', title: 'Reframing a Challenge', description: 'How will you reframe a current challenge positively this week?', type: 'textarea' as const, placeholder: 'Describe the challenge and your positive reframe of it...' },
+    { id: 'businessChallenge', title: 'The Challenge to Bring', description: 'What real business challenge will you bring to a creative brainstorming session this week?', type: 'textarea' as const, placeholder: 'Describe the challenge clearly — the more specific, the more useful the session will be...' },
+    { id: 'sessionStructure', title: 'Session Structure', description: 'How will you structure the brainstorming session to encourage divergent thinking?', type: 'textarea' as const, placeholder: 'e.g., 5 min silent idea generation, then round-robin sharing with no criticism allowed, then grouping and voting...' },
+    { id: 'safetyRule', title: 'Your Session Safety Rule', description: 'What rule will you set for the session to make it safe to share any idea?', type: 'text' as const, placeholder: 'e.g., No idea is too wild — every idea gets written down before we evaluate anything' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -294,16 +293,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You are building a more optimistic mindset. Small daily habits compound into a fundamentally different way of seeing the world.
+          Your team's brain is trained, safe, and ready. Now point it at your hardest problems.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Start your gratitude practice tonight', desc: 'Even three sentences changes your brain over time' },
-            { num: '2', title: 'Apply your reframe to the real challenge', desc: 'Notice how a different perspective changes your energy' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Communication Styles and Forms' },
+            { num: '1', title: 'Run one structured brainstorming session this week', desc: 'Use the structure and safety rule you planned in the goals section' },
+            { num: '2', title: 'Log the best idea that comes from it', desc: 'Write it down immediately — the best ideas evaporate quickly' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Adaptability`, desc: 'Next you\'ll learn how to keep innovating when conditions change fast' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

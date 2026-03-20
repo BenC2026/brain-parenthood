@@ -42,8 +42,8 @@ export default function Module9Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 9: Communication</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 9 &bull; Communication styles and forms</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 9: Adaptability</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 8–9 &bull; Adaptability drills and building a continuous learning culture</p>
         </div>
       </div>
 
@@ -86,23 +86,24 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Communication</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Explore different forms and styles of communication for deeper effectiveness</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Adaptability & Continuous Learning</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Build cognitive flexibility and a culture where learning never stops</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Not all communication is created equal. The style and form you use — assertive or passive,
-          verbal or written, formal or informal — shapes how your message lands. Building on the
-          foundational skills from earlier modules, this week you explore the full spectrum of
-          communication styles and learn when and how to deploy each one effectively.
+          Teams that thrive long-term are not just good at what they do today — they adapt quickly
+          when plans change and keep learning from every sprint. This module introduces adaptability
+          drills (short simulations that stretch cognitive flexibility) and a simple continuous
+          learning habit: each team member logs one lesson or idea per week. The goal is a team
+          that feels genuinely "in flow" — responsive, curious, and always improving.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will identify your dominant communication style, understand the four main styles
-          (assertive, passive, aggressive, passive-aggressive), and develop the flexibility
-          to adapt your approach based on context. You will also sharpen your written communication
-          and build confidence in handling difficult conversations.
+          You will run an adaptability drill with your team — a short simulation that puts you in
+          an unexpected scenario and asks you to pivot. You will also introduce weekly lesson
+          logging: a lightweight habit where each person captures one thing they learned or one
+          idea they want to try. Together, these practices build a team that bends without breaking.
         </p>
       </div>
 
@@ -114,9 +115,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Different Contexts Need Different Styles:', body: 'A one-style-fits-all approach leaves impact on the table' },
-              { title: 'Written vs Verbal Awareness:', body: 'Tone shifts between channels — mastering both matters' },
-              { title: 'Communication Style Affects Outcomes:', body: 'How you say it is as important as what you say' },
+              { title: 'Adaptability is a Team Skill:', body: 'The faster your team adjusts to change, the more resilient it becomes' },
+              { title: 'Learning Compounds Over Time:', body: 'One lesson a week adds up to 52 improvements a year per person' },
+              { title: 'Flow State is Achievable:', body: 'Teams in flow are more creative, more productive, and more connected' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -133,9 +134,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              'Identify your dominant communication style',
-              'Learn to adapt your style to different situations',
-              'Improve written communication effectiveness',
+              'Run an adaptability drill with your team',
+              'Reflect on your current level of cognitive flexibility',
+              'Launch a weekly lesson-logging habit for the team',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -157,7 +158,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ styleAwareness: 5, styleAdaptation: 5, writtenEffectiveness: 5, difficultConversations: 5, styleDescription: '' });
+  const [formData, setFormData] = useState({ teamAdaptability: 5, cognitiveFlexibility: 5, sprintLearning: 5, teamFlow: 5 });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -165,11 +166,10 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'styleAwareness', title: 'Communication Style Awareness', description: 'How aware are you of your dominant communication style?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Aware', maxLabel: 'Very Self-Aware' },
-    { id: 'styleAdaptation', title: 'Adapting Your Style', description: 'How well do you adapt your communication style to different situations?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Always the Same', maxLabel: 'Highly Adaptive' },
-    { id: 'writtenEffectiveness', title: 'Written Communication', description: 'Rate the effectiveness of your written communication (emails, messages, reports).',  type: 'slider' as const, min: 1, max: 10, minLabel: 'Needs Much Work', maxLabel: 'Very Effective' },
-    { id: 'difficultConversations', title: 'Difficult Conversations', description: 'How well do you handle difficult or uncomfortable conversations?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Avoid Them', maxLabel: 'Handle Them Well' },
-    { id: 'styleDescription', title: 'Your Communication Style', description: 'Describe your communication style in your own words.', type: 'textarea' as const, placeholder: 'How would others describe the way you communicate?' },
+    { id: 'teamAdaptability', title: 'Team Adaptability', description: 'How quickly does your team adapt when plans change unexpectedly?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Slowly', maxLabel: 'Very Quickly' },
+    { id: 'cognitiveFlexibility', title: 'Cognitive Flexibility', description: 'How easily can you shift your approach mid-task without frustration?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Difficult', maxLabel: 'Very Easily' },
+    { id: 'sprintLearning', title: 'Sprint Learning', description: 'How consistently does your team learn from each sprint or project?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely', maxLabel: 'Every Time' },
+    { id: 'teamFlow', title: 'Team Flow', description: 'How "in flow" does your team feel during collaboration right now?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Stuck & Fragmented', maxLabel: 'Fully in Flow' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -180,7 +180,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
   const handleNext = () => { const _labeled = questions.map(q => ({ title: q.title, answer: formData[q.id as keyof typeof formData] })); localStorage.setItem(`brainParenthood_module${moduleId}_assessment`, JSON.stringify({ ...formData, _labeled })); if (currentQuestion < questions.length - 1) { setCurrentQuestion(currentQuestion + 1); } else { saveModuleAnswers(moduleId, 'assessment', { ...formData, _labeled }); onNext(); } };
   const handlePrevious = () => { if (currentQuestion > 0) { setCurrentQuestion(currentQuestion - 1); } else { onBack(); } };
-  const isAnswered = () => { const v = formData[currentQ.id as keyof typeof formData]; if (currentQ.type === 'slider') return true; return (v as string) !== ''; };
+  const isAnswered = () => true;
 
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -212,10 +212,6 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
               </div>
             </div>
           )}
-          {currentQ.type === 'textarea' && (
-            <textarea value={formData[currentQ.id as keyof typeof formData] as string} onChange={(e) => setFormData({ ...formData, [currentQ.id]: e.target.value })} placeholder={currentQ.placeholder} rows={5}
-              style={{ width: '100%', padding: '16px 20px', fontSize: '15px', color: '#111827', border: '2px solid #E5E7EB', borderRadius: '12px', outline: 'none', resize: 'none', lineHeight: '1.6', boxSizing: 'border-box' }} />
-          )}
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '24px', borderTop: '1px solid #E5E7EB' }}>
           <button onClick={handlePrevious} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 20px', color: '#374151', fontWeight: '600', borderRadius: '12px', border: 'none', cursor: 'pointer', backgroundColor: 'transparent', fontSize: '15px' }}>← Back</button>
@@ -230,7 +226,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ styleShift: '', writtenGoal: '', difficultConversation: '' });
+  const [goals, setGoals] = useState({ adaptabilityChallenge: '', lessonLearned: '', lessonLoggingHabit: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -238,9 +234,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'styleShift', title: 'Communication Style Shift', description: 'What communication style shift will you make this week?', type: 'text' as const, placeholder: 'e.g., Practise being more assertive instead of passive in team meetings' },
-    { id: 'writtenGoal', title: 'Written Communication Improvement', description: 'How will you improve your written communication this week?', type: 'textarea' as const, placeholder: 'Describe what you will change in your emails or messages...' },
-    { id: 'difficultConversation', title: 'Difficult Conversation', description: 'What difficult conversation will you initiate this week?', type: 'text' as const, placeholder: 'e.g., Address the ongoing tension with my co-founder about responsibilities' },
+    { id: 'adaptabilityChallenge', title: 'Adaptability Drill', description: 'Describe one adaptability challenge or simulation you will run with your team this week.', type: 'textarea' as const, placeholder: 'e.g., Midway through a planning session, change the brief entirely and see how the team responds...' },
+    { id: 'lessonLearned', title: 'Lesson Learned', description: 'What is one lesson you learned in the last two weeks that you want to share with the team?', type: 'textarea' as const, placeholder: 'e.g., We learned that async updates work better than daily standups for our remote members...' },
+    { id: 'lessonLoggingHabit', title: 'Weekly Lesson Logging', description: 'How will you build a habit of logging weekly lessons or ideas going forward?', type: 'text' as const, placeholder: 'e.g., A shared Notion page everyone adds to on Fridays' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -296,16 +292,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You now understand your communication style more deeply. Use that self-awareness to communicate with greater impact.
+          You've built the foundations of an adaptable, continuously learning team. Keep the momentum going — one lesson at a time.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Apply your style shift in your next interaction', desc: 'Intentional change starts with one conversation' },
-            { num: '2', title: 'Have the difficult conversation you planned', desc: 'Prepare, be respectful, and stay solution focused' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Communication Skills Worksheet' },
+            { num: '1', title: 'Share one lesson learned with the team this week', desc: 'Model the habit you want the team to build' },
+            { num: '2', title: 'Set up a simple way to log weekly ideas', desc: 'A Notion page, Slack channel, or shared doc — keep it frictionless' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Progress Measurement`, desc: 'Reflect on how far the team has come since Module 1' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

@@ -41,8 +41,8 @@ export default function Module11Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 11: Decision Making</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 11 &bull; Structured approaches to better decisions</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 11: Personal Coaching Check-in</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 10–11 &bull; Individual journey reflection and one-on-one personalisation</p>
         </div>
       </div>
 
@@ -85,23 +85,24 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Decision Making</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Structured approaches to making better personal and professional decisions</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Personalisation & Coaching</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Your personal journey through the programme — what has worked, what hasn't, and what comes next</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          As a founder or leader, you face high-stakes decisions constantly — often under pressure
-          and with incomplete information. Poor decision-making processes lead to regret, wasted
-          resources, and missed opportunities. This module gives you a set of structured frameworks
-          to make faster, clearer, and more confident decisions in every area of your life and work.
+          No two people experience this programme the same way. This module is your space to reflect
+          on your individual journey — the shifts you have noticed, the habits that have stuck, and
+          the areas that still feel hard. It also prepares you for a one-on-one check-in with Lola,
+          where you can discuss your personal experience and get tailored guidance for life after
+          the programme ends.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will explore proven decision-making frameworks including pros/cons analysis, the
-          10/10/10 rule, and first-principles thinking. You will also address analysis paralysis —
-          the tendency to overthink — and develop a personal approach for handling uncertainty
-          and recovering from imperfect decisions.
+          You will reflect on how the programme has changed you personally — your stress levels,
+          your habits, and how well it has fit your working style. You will identify what you want
+          to carry forward and set a personal goal for the three months beyond the programme. Your
+          answers here will inform your one-on-one check-in conversation with Lola.
         </p>
       </div>
 
@@ -113,9 +114,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Structured Decisions Reduce Regret:', body: 'A clear process means you can stand behind your choices' },
-              { title: 'Frameworks Speed Up Choices:', body: 'Stop agonising — use a system and move forward' },
-              { title: 'Clarity Improves Confidence:', body: 'Knowing how you decide makes you a stronger leader' },
+              { title: 'Personalisation Compounds Results:', body: 'Insights tailored to you stick far longer than generic advice' },
+              { title: 'Reflection Cements Change:', body: 'Naming what has shifted makes it real and more likely to last' },
+              { title: 'One-on-One Coaching Unlocks What Groups Cannot:', body: 'Some things are easier to explore in a private conversation' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -132,9 +133,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              'Learn and apply decision-making frameworks',
-              'Reduce analysis paralysis with practical strategies',
-              'Build confidence in making decisions under uncertainty',
+              'Reflect on your personal stress, habits, and progress',
+              'Identify what you want to carry forward after the programme',
+              'Set a personal goal for the three months beyond the programme',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -156,7 +157,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ decisionConfidence: 5, analysisParalysis: 5, systematicEvaluation: 5, badDecisionRecovery: 5, difficultDecision: '' });
+  const [formData, setFormData] = useState({ personalStress: 5, habitConsistency: 5, programFit: 5, independentReadiness: 5, significantChange: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -164,11 +165,11 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'decisionConfidence', title: 'Decision-Making Confidence', description: 'How confident are you in your decision-making overall?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Unconfident', maxLabel: 'Very Confident' },
-    { id: 'analysisParalysis', title: 'Analysis Paralysis', description: 'How often do you experience analysis paralysis — overthinking to the point of not deciding?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely', maxLabel: 'Constantly' },
-    { id: 'systematicEvaluation', title: 'Systematic Option Evaluation', description: 'How well do you evaluate options systematically before deciding?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Go With My Gut', maxLabel: 'Very Systematic' },
-    { id: 'badDecisionRecovery', title: 'Recovery From Bad Decisions', description: 'How quickly do you recover and adapt when a decision does not work out?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Takes a Long Time', maxLabel: 'Adapt Quickly' },
-    { id: 'difficultDecision', title: 'A Difficult Recent Decision', description: 'Describe a recent decision you struggled with.', type: 'textarea' as const, placeholder: 'What made it difficult and how did you ultimately decide?' },
+    { id: 'personalStress', title: 'Personal Stress Change', description: 'How much has your personal stress level changed since Week 1?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Much Higher Now', maxLabel: 'Much Lower Now' },
+    { id: 'habitConsistency', title: 'Habit Consistency', description: 'How consistently have you applied what you learned in the programme?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely Applied It', maxLabel: 'Applied It Consistently' },
+    { id: 'programFit', title: 'Programme Fit', description: 'How well does the programme fit your personal working style?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Poor Fit', maxLabel: 'Perfect Fit' },
+    { id: 'independentReadiness', title: 'Independent Readiness', description: 'How prepared do you feel to sustain these habits independently after the programme ends?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not at All Ready', maxLabel: 'Fully Ready' },
+    { id: 'significantChange', title: 'Most Significant Personal Change', description: 'Describe the most significant personal change you have noticed in yourself since starting.', type: 'textarea' as const, placeholder: 'What is different about how you think, feel, or behave compared to Week 1?' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -229,7 +230,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ framework: '', pendingDecision: '', uncertaintyApproach: '' });
+  const [goals, setGoals] = useState({ habitToKeep: '', programImprovement: '', postProgramGoal: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -237,9 +238,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'framework', title: 'Decision-Making Framework', description: 'What decision-making framework will you try this week?', type: 'text' as const, placeholder: 'e.g., The 10/10/10 rule: How will I feel in 10 minutes, 10 months, 10 years?' },
-    { id: 'pendingDecision', title: 'Pending Decision to Resolve', description: 'What pending decision will you resolve this week using your new framework?', type: 'textarea' as const, placeholder: 'Describe the decision and how you will approach it...' },
-    { id: 'uncertaintyApproach', title: 'Handling Uncertainty', description: 'How will you handle uncertainty in future decisions?', type: 'text' as const, placeholder: 'e.g., Set a decision deadline, act with best available information, learn fast' },
+    { id: 'habitToKeep', title: 'Habit to Continue', description: 'What is one thing you want to continue doing after the programme ends?', type: 'text' as const, placeholder: 'e.g., Weekly team check-ins using the emotional temperature framework' },
+    { id: 'programImprovement', title: 'Programme Improvement', description: 'What would make the programme more useful for someone like you?', type: 'textarea' as const, placeholder: 'Think about content, pacing, format, or anything else...' },
+    { id: 'postProgramGoal', title: 'Post-Programme Goal', description: 'What personal goal will you set for the next 3 months beyond this programme?', type: 'textarea' as const, placeholder: 'Be specific — what will you do differently, and how will you know you have succeeded?' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -295,16 +296,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You now have a structured approach to making decisions. Use it on your pending decision this week and notice the difference.
+          You've reflected on your personal journey and set your sights on what comes next. One module left — let's finish strong.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Apply your framework to your pending decision', desc: 'Trust the process and commit to a decision this week' },
-            { num: '2', title: 'Set a decision deadline for anything else pending', desc: 'Eliminate lingering indecision with a firm timeline' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Anger Management — the final module' },
+            { num: '1', title: 'Book a one-on-one check-in with Lola', desc: 'Discuss your individual journey and get personalised guidance' },
+            { num: '2', title: 'Write down the habits you want to carry forward', desc: 'Make them explicit so they are easier to sustain' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Final Wrap-Up`, desc: 'Celebrate everything you and your team have built together' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

@@ -41,8 +41,8 @@ export default function Module10Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 10: Communication Skills Worksheet</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 10 &bull; Practice and application</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 10: Progress Measurement</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 10–11 &bull; Second round of surveys — measure progress since Week 1</p>
         </div>
       </div>
 
@@ -85,22 +85,24 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Communication Skills Worksheet</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Apply what you have learned through hands-on exercises and reflection</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Measurement, Feedback & Course Correction</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>A progress checkpoint — not new content, but a chance to see how far you've come</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Learning communication skills is one thing — embedding them into daily habits is another.
-          This worksheet module bridges that gap. You will take stock of your progress since Module 5,
-          apply your key techniques in a structured self-assessment, and set a focused application
-          plan for the final stretch of the programme.
+          This module is your programme midpoint audit. You will complete a second round of the
+          same core assessments from Module 1 so you can compare your scores side by side and see
+          real, measurable progress. You will also run a team retrospective — gathering honest
+          feedback on each module and using it to tune the final two weeks to what your team
+          actually needs. The goal: gain clarity, make adjustments, and personalise the final stretch.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          This module is practice-focused. You will complete a communication skills self-assessment
-          to measure your growth, apply 'I' statements in a real scenario you have faced recently,
-          and reflect on your active listening progress since the programme began.
+          You will re-answer the four baseline questions from Module 1 and reflect on how your
+          scores have shifted. You will then run a team retrospective to gather feedback on the
+          modules completed so far. Finally, you will set a course-correction goal for the final
+          two modules based on what the data and your team tell you.
         </p>
       </div>
 
@@ -112,9 +114,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Practice Embeds Learning:', body: 'Skills only become natural through repeated application' },
-              { title: 'Reflection Reveals Gaps:', body: 'Honest self-review shows where to focus next' },
-              { title: 'Application Builds Confidence:', body: 'Using skills in real situations cements them permanently' },
+              { title: 'You Can\'t Improve What You Don\'t Measure:', body: 'Comparing scores to Week 1 makes progress visible and concrete' },
+              { title: 'Feedback Shapes the Final Stretch:', body: 'The last two modules can be tuned to what your team actually needs' },
+              { title: 'Course Correction is a Strength:', body: 'Adjusting mid-programme is not failure — it is good leadership' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -131,9 +133,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              "Complete a communication skills self-assessment",
-              "Apply 'I' statements in a real recent scenario",
-              "Reflect on your active listening progress",
+              'Re-take the four baseline assessments from Module 1',
+              'Run a team retrospective on the modules so far',
+              'Set a course-correction goal for the final two modules',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -155,7 +157,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ skillImprovement: 5, techniqueConsistency: 5, challengeConfidence: 5, othersResponse: 5, communicationWin: '' });
+  const [formData, setFormData] = useState({ teamStress: 5, teamProductivity: 5, communicationQuality: 5, workLifeBalance: 5, impactfulModule: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -163,11 +165,11 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'skillImprovement', title: 'Communication Skills Improvement', description: 'How much have your communication skills improved since Module 5?', type: 'slider' as const, min: 1, max: 10, minLabel: 'No Improvement', maxLabel: 'Significant Improvement' },
-    { id: 'techniqueConsistency', title: 'Technique Consistency', description: 'How consistently do you use the techniques you have learned throughout this programme?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely Use Them', maxLabel: 'Use Them Daily' },
-    { id: 'challengeConfidence', title: 'Confidence in Challenging Conversations', description: 'How confident do you feel in challenging conversations compared to week 1?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not More Confident', maxLabel: 'Much More Confident' },
-    { id: 'othersResponse', title: "Others' Response to Your Communication", description: 'How well do others respond to your communication now compared to before?', type: 'slider' as const, min: 1, max: 10, minLabel: 'No Noticeable Change', maxLabel: 'Much Better Responses' },
-    { id: 'communicationWin', title: 'Your Communication Win', description: 'Describe one specific communication win you have had since starting this programme.', type: 'textarea' as const, placeholder: 'What happened and what skill did you use?' },
+    { id: 'teamStress', title: 'Team Stress Now', description: 'How would you rate overall team stress now compared to when you started?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Much Higher Than Week 1', maxLabel: 'Much Lower Than Week 1' },
+    { id: 'teamProductivity', title: 'Team Productivity', description: 'How has your team\'s productivity changed since Week 1?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Significantly Worse', maxLabel: 'Significantly Better' },
+    { id: 'communicationQuality', title: 'Communication Quality', description: 'How much has your team\'s communication quality improved?', type: 'slider' as const, min: 1, max: 10, minLabel: 'No Improvement', maxLabel: 'Dramatically Improved' },
+    { id: 'workLifeBalance', title: 'Work-Life Balance', description: 'How would you rate work-life balance now versus at the start?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Much Worse', maxLabel: 'Much Better' },
+    { id: 'impactfulModule', title: 'Most Impactful Module', description: 'Which module had the most impact on you so far, and why?', type: 'textarea' as const, placeholder: 'Name the module and explain what changed for you...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -228,7 +230,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ focusSkill: '', practisePlan: '' });
+  const [goals, setGoals] = useState({ remainingWorkArea: '', courseCorrection: '', programFeedback: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -236,8 +238,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'focusSkill', title: 'Communication Focus Skill', description: 'What single communication skill will you focus on this week?', type: 'text' as const, placeholder: "e.g., Active listening — fully present, no distractions" },
-    { id: 'practisePlan', title: 'Real Situation Practice Plan', description: 'How will you practise this skill in a real situation this week?', type: 'textarea' as const, placeholder: 'Describe the specific situation and how you will apply the skill...' },
+    { id: 'remainingWorkArea', title: 'Area Still Needing Work', description: 'Based on your progress, what area still needs the most work?', type: 'textarea' as const, placeholder: 'Be honest — where is the team (or you) still struggling most?' },
+    { id: 'courseCorrection', title: 'Course Correction', description: 'What specific adjustment will you make in the final two modules?', type: 'text' as const, placeholder: 'e.g., Spend more time on psychological safety exercises in team meetings' },
+    { id: 'programFeedback', title: 'Programme Feedback', description: 'What feedback would you give about the programme so far that could improve it?', type: 'textarea' as const, placeholder: 'What has worked well? What would you change?' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -293,16 +296,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You have reflected on your progress and created a focused practice plan. You are becoming a genuinely skilled communicator.
+          You've measured your progress, gathered real feedback, and set a course-correction goal. The final stretch is now personalised to you.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Execute your practice plan', desc: 'Apply your focus skill in the situation you identified' },
-            { num: '2', title: 'Celebrate your communication win', desc: 'Acknowledge the growth you have already made' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Decision Making' },
+            { num: '1', title: 'Share your progress comparison with Lola or your team lead', desc: 'Talk through the shift in your scores since Module 1' },
+            { num: '2', title: 'Act on your adjustment goal before Module 12', desc: 'One focused change now will compound into the final modules' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Personal Coaching Check-in`, desc: 'Reflect on your personal journey through the programme so far' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

@@ -49,10 +49,10 @@ export default function Module4Page() {
             ← Back to Modules
           </Link>
           <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>
-            Module 4: The Nuts and Bolts
+            Module 4: Personal Resilience
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>
-            Week 4 &bull; Practical life and work skills
+            Weeks 4&ndash;5 &bull; Understanding your stress triggers, burnout signs, and coping strategies
           </p>
         </div>
       </div>
@@ -96,22 +96,24 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>The Nuts and Bolts</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Money management, time management, and decision making</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Personal Resilience</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Your personal resilience workshop</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Running a startup means wearing many hats. This module digs into the essential practical
-          skills that underpin everything else: understanding your finances, making the most of
-          your time, and making sound decisions under pressure. Get these foundations right and
-          everything else becomes easier.
+          Resilience is not about being unaffected by stress — it is about knowing yourself well enough
+          to recover quickly and keep going. This module introduces you to the resilience workshop concept:
+          a structured space to explore your stress triggers, spot early burnout signs, and build a
+          personal toolkit of evidence-based coping strategies you can draw on every day.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          From budgeting basics to time-blocking techniques and decision-making frameworks, this
-          module gives you the practical tools to take control of your work and life. You'll
-          assess where you stand today and leave with a clear action plan for improvement.
+          Over Weeks 4 and 5 you will practise cognitive reframing — changing how you see a problem so
+          it feels less overwhelming — alongside breathing and relaxation exercises you can use in the
+          moment. You will also set goals with a growth mindset, so that setbacks become learning
+          opportunities rather than dead ends. Knowing your triggers and burnout signs is the foundation
+          of everything that follows.
         </p>
       </div>
 
@@ -126,15 +128,15 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}><strong style={{ color: '#111827' }}>Financial Clarity Reduces Stress:</strong> Know your numbers, reduce anxiety</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}><strong style={{ color: '#111827' }}>Self-Knowledge is the Foundation:</strong> You can only manage what you can see coming</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}><strong style={{ color: '#111827' }}>Time Mastery Boosts Productivity:</strong> Do more with the same 24 hours</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}><strong style={{ color: '#111827' }}>Reframe to Recover Faster:</strong> Cognitive reframing changes how stress lands</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}><strong style={{ color: '#111827' }}>Good Decisions Drive Outcomes:</strong> Structured thinking leads to better results</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}><strong style={{ color: '#111827' }}>Grow Through Setbacks:</strong> A growth mindset turns obstacles into stepping stones</p>
             </div>
           </div>
         </div>
@@ -149,15 +151,15 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Improve financial awareness and money management habits</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Identify your personal stress triggers and early burnout signs</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Master practical time management techniques</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Practise cognitive reframing and breathing exercises as coping tools</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Strengthen decision-making confidence and process</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Build a personal resilience plan grounded in a growth mindset</p>
             </div>
           </div>
         </div>
@@ -175,11 +177,11 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [formData, setFormData] = useState({
-    financeManagement: 5,
-    timeManagement: 5,
-    decisionConfidence: 5,
-    workflowOrganisation: 5,
-    improvementArea: '',
+    stressTriggerAwareness: 5,
+    burnoutSigns: 5,
+    copingEffectiveness: 5,
+    cognitiveReframing: 5,
+    stressTriggersList: '',
   });
 
   useEffect(() => {
@@ -188,11 +190,11 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'financeManagement', title: 'Financial Management', description: 'How well do you manage your personal or business finances?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Struggle Significantly', maxLabel: 'Very In Control' },
-    { id: 'timeManagement', title: 'Time Management', description: 'How effectively do you manage your time across tasks and priorities?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Often Behind', maxLabel: 'Always On Top' },
-    { id: 'decisionConfidence', title: 'Decision-Making Confidence', description: 'How confident are you when making important decisions?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Uncertain', maxLabel: 'Very Confident' },
-    { id: 'workflowOrganisation', title: 'Workflow Organisation', description: 'How organised is your daily workflow?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Quite Chaotic', maxLabel: 'Highly Structured' },
-    { id: 'improvementArea', title: 'Top Improvement Area', description: 'What practical area of your work life needs the most improvement right now?', type: 'textarea' as const, placeholder: 'Describe what you would most like to improve...' },
+    { id: 'stressTriggerAwareness', title: 'Stress Trigger Awareness', description: 'How well do you recognise your personal stress triggers?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely Aware', maxLabel: 'Always Aware' },
+    { id: 'burnoutSigns', title: 'Burnout Sign Recognition', description: 'How clearly can you identify early signs of burnout in yourself?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Hard to Spot', maxLabel: 'Very Clear' },
+    { id: 'copingEffectiveness', title: 'Coping Strategy Effectiveness', description: 'How effective are your current coping strategies?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Effective', maxLabel: 'Very Effective' },
+    { id: 'cognitiveReframing', title: 'Cognitive Reframing', description: 'How often do you use cognitive reframing to shift perspective on a problem?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Never', maxLabel: 'All the Time' },
+    { id: 'stressTriggersList', title: 'Your Stress Triggers & Coping Strategies', description: 'List your top 3 stress triggers and one coping strategy you currently use for each.', type: 'textarea' as const, placeholder: 'e.g.\n1. Trigger: back-to-back meetings — Coping: block 30 min of quiet time after\n2. Trigger: unclear expectations — Coping: ask for a written brief\n3. Trigger: ...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -266,7 +268,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ financialHabit: '', timeManagementTechnique: '', decisionProcess: '' });
+  const [goals, setGoals] = useState({ cognitiveReframingStatement: '', relaxationTechnique: '', resiliencePlan: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -274,9 +276,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'financialHabit', title: 'Financial Habit', description: 'What financial habit will you build this week?', type: 'text' as const, placeholder: 'e.g., Review my monthly budget every Monday morning' },
-    { id: 'timeManagementTechnique', title: 'Time Management Technique', description: 'What time management technique will you implement?', type: 'textarea' as const, placeholder: 'Describe the technique and how you will use it...' },
-    { id: 'decisionProcess', title: 'Decision-Making Process', description: 'How will you improve your decision-making process?', type: 'text' as const, placeholder: 'e.g., Use a pros/cons list before any major decision' },
+    { id: 'cognitiveReframingStatement', title: 'Cognitive Reframing Statement', description: 'Write one cognitive reframing statement for your biggest current stressor.', type: 'textarea' as const, placeholder: 'e.g., Instead of "this is impossible", try "this is hard right now and I have handled hard things before"...' },
+    { id: 'relaxationTechnique', title: 'Daily Relaxation Technique', description: 'What breathing or relaxation technique will you practise daily?', type: 'text' as const, placeholder: 'e.g., 4-7-8 breathing for 3 minutes each morning' },
+    { id: 'resiliencePlan', title: 'Personal Resilience Plan', description: 'Describe your personal resilience plan — what will you do when you notice burnout signs?', type: 'textarea' as const, placeholder: 'Describe the specific steps you will take when you start to feel burnt out...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -339,7 +341,7 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You have laid the practical foundations. Apply your new habits to finances, time, and decisions this week.
+          You now know your triggers, your warning signs, and your plan. That self-knowledge is your resilience.
         </p>
       </div>
 
@@ -347,9 +349,9 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Start your financial habit', desc: 'Even one small step this week builds momentum' },
-            { num: '2', title: 'Trial your time management technique', desc: 'Apply it to tomorrow\'s schedule' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Effective Communication' },
+            { num: '1', title: 'Practise your chosen relaxation technique every day', desc: 'Even 3–5 minutes daily compounds into real change' },
+            { num: '2', title: 'Write down the next time you notice a stress trigger', desc: 'Record what happened and how you responded' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Team Resilience`, desc: 'Next you\'ll extend this resilience work to your whole team' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

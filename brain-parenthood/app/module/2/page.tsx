@@ -62,10 +62,10 @@ export default function Module2Page() {
             ← Back to Modules
           </Link>
           <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>
-            Module 2: How to Handle the Tough Stuff
+            Module 2: Individual Mindfulness
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>
-            Week 2 &bull; Coping strategies for difficult situations
+            Weeks 2&ndash;3 &bull; Being mindful of yourself, your reactions, and how you cope
           </p>
         </div>
       </div>
@@ -151,24 +151,25 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
         <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>
-          How to Handle the Tough Stuff
+          Individual Mindfulness
         </h2>
         <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>
-          Building resilience through conflict, anger, and stress management
+          Knowing yourself before you can show up for your team
         </p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Startup life is demanding. Conflict, frustration, and unexpected setbacks are unavoidable —
-          but how you respond makes all the difference. This module equips you with practical coping
-          strategies to handle difficult situations constructively and come out stronger on the other side.
+          You cannot lead, collaborate, or support others well when you are running on empty or operating
+          on autopilot. This module turns attention inward — helping you notice your own stress patterns,
+          recognise when you are not at your best, and build the personal mindfulness habits that underpin
+          everything else in this programme.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          This module explores conflict resolution, anger management, and practical coping techniques.
-          You will leave with a personal toolkit for handling workplace stress, managing your own
-          emotional responses, and turning difficult interactions into opportunities for growth and understanding.
+          Over Weeks 2 and 3, you will develop awareness of your personal stress signals, practise
+          techniques for staying present under pressure, and design a daily mindfulness habit that fits
+          your life — so that stronger focus, creativity, and emotional regulation become your new baseline.
         </p>
       </div>
 
@@ -184,19 +185,19 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
               <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>
-                <strong style={{ color: '#111827' }}>Handle Conflict Constructively:</strong> Turn disagreements into productive dialogue
+                <strong style={{ color: '#111827' }}>Notice Stress Early:</strong> Catch your own signals before they escalate
               </p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
               <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>
-                <strong style={{ color: '#111827' }}>Manage Anger Productively:</strong> Channel strong emotions into positive action
+                <strong style={{ color: '#111827' }}>Respond, Not React:</strong> Create space between stimulus and response
               </p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
               <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>
-                <strong style={{ color: '#111827' }}>Build Stress Resilience:</strong> Recover faster from setbacks and high-pressure periods
+                <strong style={{ color: '#111827' }}>Strengthen Focus:</strong> Build the attention and creativity needed to do your best work
               </p>
             </div>
           </div>
@@ -212,15 +213,15 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Learn conflict resolution techniques you can apply immediately</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Notice your own stress patterns and recognise when you are not at your best</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Practice proven anger management strategies</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Strengthen personal mindfulness through breathing, reflection, or movement</p>
             </div>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
-              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Develop a personalised coping toolkit for tough situations</p>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6' }}>Commit to one daily mindfulness habit you will carry into the rest of the programme</p>
             </div>
           </div>
         </div>
@@ -253,11 +254,10 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [formData, setFormData] = useState({
-    conflictHandling: 5,
-    angerManagement: 5,
-    setbackCoping: 5,
+    stressAwareness: 5,
     emotionalRegulation: 5,
-    toughSituation: '',
+    mindfulnessPractice: 5,
+    focusAwareness: 5,
   });
 
   useEffect(() => {
@@ -267,39 +267,19 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
   const questions = [
     {
-      id: 'conflictHandling',
-      title: 'Handling Conflict',
-      description: 'How well do you handle conflict when it arises at work?',
+      id: 'stressAwareness',
+      title: 'Stress Awareness',
+      description: 'How aware are you of your own stress in the moment?',
       type: 'slider' as const,
       min: 1,
       max: 10,
-      minLabel: 'Avoid / Struggle',
-      maxLabel: 'Handle With Ease',
-    },
-    {
-      id: 'angerManagement',
-      title: 'Managing Anger',
-      description: 'How effectively do you manage anger in the moment?',
-      type: 'slider' as const,
-      min: 1,
-      max: 10,
-      minLabel: 'Struggle Significantly',
-      maxLabel: 'Manage Very Well',
-    },
-    {
-      id: 'setbackCoping',
-      title: 'Coping With Setbacks',
-      description: 'How do you cope when unexpected setbacks occur?',
-      type: 'slider' as const,
-      min: 1,
-      max: 10,
-      minLabel: 'Feel Overwhelmed',
-      maxLabel: 'Adapt Quickly',
+      minLabel: 'Rarely Notice',
+      maxLabel: 'Always Aware',
     },
     {
       id: 'emotionalRegulation',
-      title: 'Emotional Regulation Under Stress',
-      description: 'Rate your emotional regulation during high-stress situations.',
+      title: 'Emotional Regulation Under Pressure',
+      description: 'How well do you regulate your emotions under pressure?',
       type: 'slider' as const,
       min: 1,
       max: 10,
@@ -307,11 +287,24 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
       maxLabel: 'Very Regulated',
     },
     {
-      id: 'toughSituation',
-      title: 'A Recent Tough Situation',
-      description: 'Describe a recent tough situation you faced at work and how you responded.',
-      type: 'textarea' as const,
-      placeholder: 'Describe the situation and your response...',
+      id: 'mindfulnessPractice',
+      title: 'Mindfulness Practice',
+      description: 'How often do you practise any form of mindfulness (breathing, reflection, etc.)?',
+      type: 'slider' as const,
+      min: 1,
+      max: 10,
+      minLabel: 'Never',
+      maxLabel: 'Every Day',
+    },
+    {
+      id: 'focusAwareness',
+      title: 'Focus & Attention Awareness',
+      description: 'How clearly do you notice when your focus or attention drops?',
+      type: 'slider' as const,
+      min: 1,
+      max: 10,
+      minLabel: 'Rarely Notice',
+      maxLabel: 'Always Notice',
     },
   ];
 
@@ -338,9 +331,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   };
 
   const isAnswered = () => {
-    const value = formData[currentQ.id as keyof typeof formData];
-    if (currentQ.type === 'slider') return true;
-    return (value as string) !== '';
+    return true; // all questions are sliders
   };
 
   const sliderValue = formData[currentQ.id as keyof typeof formData] as number;
@@ -423,26 +414,6 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
             </div>
           )}
 
-          {currentQ.type === 'textarea' && (
-            <textarea
-              value={formData[currentQ.id as keyof typeof formData] as string}
-              onChange={(e) => setFormData({ ...formData, [currentQ.id]: e.target.value })}
-              placeholder={currentQ.placeholder}
-              rows={5}
-              style={{
-                width: '100%',
-                padding: '16px 20px',
-                fontSize: '15px',
-                color: '#111827',
-                border: '2px solid #E5E7EB',
-                borderRadius: '12px',
-                outline: 'none',
-                resize: 'none',
-                lineHeight: '1.6',
-                boxSizing: 'border-box',
-              }}
-            />
-          )}
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '24px', borderTop: '1px solid #E5E7EB' }}>
@@ -492,9 +463,9 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [goals, setGoals] = useState({
-    conflictApproach: '',
-    angerStrategy: '',
-    copingTool: '',
+    mindfulnessHabit: '',
+    selfAwarenessSituation: '',
+    improvementGoal: '',
   });
 
   useEffect(() => {
@@ -504,25 +475,25 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
 
   const questions = [
     {
-      id: 'conflictApproach',
-      title: 'Conflict Resolution Approach',
-      description: 'What conflict resolution approach will you practise this week?',
+      id: 'mindfulnessHabit',
+      title: 'Daily Mindfulness Habit',
+      description: 'What one mindfulness habit will you commit to practising daily?',
       type: 'text' as const,
-      placeholder: 'e.g., Pause and listen before responding in disagreements',
+      placeholder: 'e.g., 5 minutes of breathing exercises each morning',
     },
     {
-      id: 'angerStrategy',
-      title: 'Anger Management Strategy',
-      description: 'How will you manage anger more effectively going forward?',
+      id: 'selfAwarenessSituation',
+      title: 'A Moment Self-Awareness Would Have Helped',
+      description: 'Describe a situation where better self-awareness would have helped you.',
       type: 'textarea' as const,
-      placeholder: 'Describe the specific strategy you will use...',
+      placeholder: 'Describe the situation and what you wish you had noticed sooner...',
     },
     {
-      id: 'copingTool',
-      title: 'Coping Strategy',
-      description: 'What coping strategy will you adopt for tough situations?',
-      type: 'text' as const,
-      placeholder: 'e.g., Take a 5-minute walk before reacting to stressful news',
+      id: 'improvementGoal',
+      title: 'Focus, Creativity, or Attention Goal',
+      description: 'What improvement in creativity, focus, or attention do you want to notice by the end of this programme?',
+      type: 'textarea' as const,
+      placeholder: 'Describe what you want to notice changing over the coming weeks...',
     },
   ];
 
@@ -698,7 +669,7 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
           Module {moduleId} Complete!
         </h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You've built your coping toolkit for conflict, anger, and stress. Keep practising these strategies every day.
+          You've taken the first step inward. Keep practising your mindfulness habit every day this week.
         </p>
       </div>
 
@@ -708,9 +679,9 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Practise your coping strategy', desc: 'Apply it the next time a difficult situation arises' },
-            { num: '2', title: 'Reflect on your conflict approach', desc: 'Notice how your responses change with intention' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'How to Put Your Best Foot Forward' },
+            { num: '1', title: 'Practise your chosen mindfulness habit every day this week', desc: 'Consistency is more important than duration — even 5 minutes counts' },
+            { num: '2', title: 'Notice moments of stress and name them before reacting', desc: 'Pause, label what you feel, then choose your response' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Team Mindfulness`, desc: 'You\'ve started with yourself; next you\'ll extend this to your team' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{

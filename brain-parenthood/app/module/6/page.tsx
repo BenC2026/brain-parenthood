@@ -42,8 +42,8 @@ export default function Module6Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 6: Stress Management</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 6 &bull; Relaxation and stress coping strategies</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 6: Communication and Trust</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 6&ndash;7 &bull; Active listening, feedback, and conflict resolution</p>
         </div>
       </div>
 
@@ -86,22 +86,25 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Stress Management</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Relaxation techniques and practical coping strategies for lasting wellbeing</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Communication and Trust</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Building a team climate of trust and respect through active communication</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Stress is inevitable in a startup environment, but chronic unmanaged stress leads to
-          burnout, poor health, and diminished performance. This module equips you with proven
-          relaxation techniques and a personalised stress management plan so you can recover
-          faster, stay focused, and sustain your energy over the long term.
+          Trust is not built in a single conversation — it is earned through hundreds of small moments
+          where people feel heard, respected, and safe to speak up. This module introduces the
+          communication and psychological safety phase of the programme, focusing on the active
+          skills that create that climate: listening deeply, giving feedback that helps rather than
+          hurts, and resolving conflict before it damages relationships.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will learn at least three relaxation techniques — including breathing exercises, progressive
-          muscle relaxation, and mindful movement — and identify your personal stress triggers.
-          You will leave with a concrete stress relief plan you can implement immediately.
+          Over Weeks 6 and 7 you will practise active listening techniques that make people feel
+          genuinely heard, learn how to give and receive feedback constructively, and work through
+          conflict resolution approaches relevant to startup life. You will role-play real
+          communication scenarios and leave with concrete commitments for how you will communicate
+          differently this week. The goal: a team climate where trust and respect are the norm.
         </p>
       </div>
 
@@ -113,9 +116,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Chronic Stress Harms Health:', body: 'Long-term stress damages physical and mental wellbeing' },
-              { title: 'Relaxation Improves Focus:', body: 'A calmer mind makes sharper decisions' },
-              { title: 'Coping Strategies Prevent Burnout:', body: 'Build resilience before you hit the wall' },
+              { title: 'Active Listening Builds Trust:', body: 'People open up to those who make them feel truly heard' },
+              { title: 'Constructive Feedback Accelerates Growth:', body: 'Honest, kind feedback is one of the most powerful development tools' },
+              { title: 'Resolved Conflict Protects Performance:', body: 'Unresolved tension quietly drains energy, focus, and morale' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -132,9 +135,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              'Learn 3+ relaxation techniques you can use immediately',
-              'Build a personal stress response plan',
-              'Identify and reduce your daily stress triggers',
+              'Assess your current listening, feedback, and conflict resolution skills',
+              'Practise active listening and constructive feedback through real scenarios',
+              'Leave with a clear plan for communicating differently this week',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -156,7 +159,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ stressFrequency: 5, reliefEffectiveness: 5, triggerAwareness: 5, stressRecovery: 5, stressTriggers: '' });
+  const [formData, setFormData] = useState({ activeListening: 5, givingFeedback: 5, receivingFeedback: 5, conflictResolution: 5, communicationBreakdown: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -164,11 +167,11 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'stressFrequency', title: 'Stress Frequency', description: 'How frequently do you experience significant stress?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely', maxLabel: 'Constantly' },
-    { id: 'reliefEffectiveness', title: 'Current Stress Relief', description: 'How effective are your current stress relief methods?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Effective', maxLabel: 'Very Effective' },
-    { id: 'triggerAwareness', title: 'Trigger Awareness', description: 'How well do you identify what causes your stress?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Aware', maxLabel: 'Very Aware' },
-    { id: 'stressRecovery', title: 'Recovery After Stress', description: 'How well do you recover after stressful events?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Takes a Long Time', maxLabel: 'Bounce Back Quickly' },
-    { id: 'stressTriggers', title: 'Your Top Stress Triggers', description: 'What are your top 3 stress triggers right now?', type: 'textarea' as const, placeholder: 'List your top stress triggers...' },
+    { id: 'activeListening', title: 'Active Listening', description: 'How well do you actively listen when someone is speaking?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Often Distracted', maxLabel: 'Fully Present' },
+    { id: 'givingFeedback', title: 'Giving Constructive Feedback', description: 'How constructively do you give feedback to teammates?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Struggle to Frame It Well', maxLabel: 'Very Constructively' },
+    { id: 'receivingFeedback', title: 'Receiving Critical Feedback', description: 'How well do you receive critical feedback without becoming defensive?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Take It Personally', maxLabel: 'Use It Constructively' },
+    { id: 'conflictResolution', title: 'Team Conflict Resolution', description: 'How effectively does your team resolve conflict?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Avoids or Escalates', maxLabel: 'Resolves Quickly' },
+    { id: 'communicationBreakdown', title: 'A Communication Breakdown', description: 'Describe a recent conflict or communication breakdown — what happened and what could have been done differently?', type: 'textarea' as const, placeholder: 'Describe what happened and what you would do differently now...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -229,7 +232,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ relaxationTechnique: '', triggerReduction: '', stressRoutine: '' });
+  const [goals, setGoals] = useState({ activeListeningTechnique: '', feedbackCommitment: '', conflictApproach: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -237,9 +240,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'relaxationTechnique', title: 'Daily Relaxation Technique', description: 'What relaxation technique will you practise daily this week?', type: 'text' as const, placeholder: 'e.g., 4-7-8 breathing for 5 minutes every morning' },
-    { id: 'triggerReduction', title: 'Reduce Your Top Trigger', description: 'How will you reduce or address your top stress trigger?', type: 'textarea' as const, placeholder: 'Describe your plan to address this trigger...' },
-    { id: 'stressRoutine', title: 'Stress Relief Routine', description: 'What does your weekly stress relief routine look like?', type: 'text' as const, placeholder: 'e.g., 20-minute walk, journalling, and no screens after 9pm' },
+    { id: 'activeListeningTechnique', title: 'Active Listening Commitment', description: 'What active listening technique will you practise in your next meeting?', type: 'text' as const, placeholder: 'e.g., Summarise back what I hear before responding' },
+    { id: 'feedbackCommitment', title: 'Feedback This Week', description: 'Who will you give constructive feedback to this week, and what will you say?', type: 'textarea' as const, placeholder: 'Name the person, describe the feedback, and how you will frame it constructively...' },
+    { id: 'conflictApproach', title: 'Your New Conflict Approach', description: 'How will you approach the next conflict differently based on what you\'ve learned?', type: 'textarea' as const, placeholder: 'Describe the specific steps or mindset you will bring to the next disagreement...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -295,16 +298,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You now have a personal stress management plan. Commit to your daily relaxation practice and watch the difference.
+          Every conversation this week is a chance to practise. Trust is built one interaction at a time.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Do your relaxation technique today', desc: 'Start building the daily habit right now' },
-            { num: '2', title: 'Track your stress this week', desc: 'Notice which triggers come up and how you respond' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Parenting' },
+            { num: '1', title: 'Practise active listening in every meeting this week', desc: 'Summarise back what you hear before you respond' },
+            { num: '2', title: 'Give one piece of constructive feedback before Module 7', desc: 'Use what you planned in the goals section' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Psychological Safety Rituals`, desc: 'Next you\'ll turn these skills into lasting team habits and rituals' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

@@ -42,8 +42,8 @@ export default function Module5Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 5: Effective Communication</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 5 &bull; 'I' statements and active listening</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 5: Team Resilience</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 4&ndash;5 &bull; Building team support, trust, and openness through failure sharing</p>
         </div>
       </div>
 
@@ -86,22 +86,26 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Effective Communication</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>'I' statements and active listening for real connection</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Team Resilience</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Extending personal resilience to the whole team</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          The difference between a conversation that creates conflict and one that builds understanding
-          often comes down to a few specific techniques. This module dives deep into two of the most
-          powerful: 'I' statements that express your feelings without triggering defensiveness, and
-          active listening that makes people feel truly heard.
+          Personal resilience is necessary, but it is not enough on its own. A team where people
+          hide mistakes, work in silos, and avoid vulnerability will always underperform one that
+          operates with openness and trust. This module extends your resilience work to the team
+          level — helping you build a culture where it is safe to admit mistakes, share what you
+          learned from them, and support each other through stress.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will practise constructing 'I' statements to express needs and feelings clearly, and
-          learn active listening techniques that transform how you engage in conversations. You will
-          also explore how to give and receive feedback in ways that strengthen rather than damage relationships.
+          The central concept in this module is "failure sharing" — the deliberate practice of being
+          open about mistakes and what you learned from them. You will explore how team trust and
+          mutual support reduce individual stress and prevent productivity dips, and leave with a
+          concrete commitment for how you will role-model openness this week. The goal: a team
+          that admits mistakes without fear, handles collective stress with confidence, and has
+          fewer and shorter productivity dips.
         </p>
       </div>
 
@@ -113,9 +117,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: "'I' Statements Reduce Defensiveness:", body: "Own your experience without blaming others" },
-              { title: "Active Listening Builds Trust:", body: "People open up to those who truly listen" },
-              { title: "Clear Communication Prevents Conflict:", body: "Misunderstandings become rare when language is precise" },
+              { title: "Failure Sharing Accelerates Learning:", body: "Teams that discuss mistakes openly repeat them less" },
+              { title: "Trust Reduces Individual Stress:", body: "Knowing your team has your back changes how pressure feels" },
+              { title: "Openness Prevents Productivity Dips:", body: "Problems surface earlier when people feel safe to speak up" },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -132,9 +136,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              "Master the construction and use of 'I' statements",
-              "Practise active listening in real conversations",
-              "Give and receive constructive feedback effectively",
+              "Assess your team's current levels of trust, openness, and collective stress handling",
+              "Understand how failure sharing builds psychological safety and team resilience",
+              "Commit to one action that makes it safer for your team to be open this week",
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -156,7 +160,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ iStatements: 5, activeListening: 5, givingFeedback: 5, receivingFeedback: 5, conversationChallenge: '' });
+  const [formData, setFormData] = useState({ admittingMistakes: 5, teamSupport: 5, learningFromFailure: 5, collectiveStressConfidence: 5, failureExample: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -164,11 +168,11 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'iStatements', title: "Using 'I' Statements", description: "How often do you use 'I' statements rather than 'you' statements in conflict?", type: 'slider' as const, min: 1, max: 10, minLabel: 'Never', maxLabel: 'Always' },
-    { id: 'activeListening', title: 'Active Listening', description: 'How well do you actively listen when others speak?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Often Distracted', maxLabel: 'Fully Present' },
-    { id: 'givingFeedback', title: 'Giving Constructive Feedback', description: 'How comfortable are you giving constructive feedback to others?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Uncomfortable', maxLabel: 'Very Comfortable' },
-    { id: 'receivingFeedback', title: 'Receiving Critical Feedback', description: 'How well do you receive and act on critical feedback?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Take It Personally', maxLabel: 'Use It Constructively' },
-    { id: 'conversationChallenge', title: 'A Difficult Conversation', description: 'Describe a recent conversation that did not go as planned.', type: 'textarea' as const, placeholder: 'What happened and what would you do differently?' },
+    { id: 'admittingMistakes', title: 'Comfort Admitting Mistakes', description: 'How comfortable are you admitting mistakes to your team?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Uncomfortable', maxLabel: 'Very Comfortable' },
+    { id: 'teamSupport', title: 'Team Support During Stress', description: 'How much does your team support each other during stressful periods?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not at All', maxLabel: 'Completely' },
+    { id: 'learningFromFailure', title: 'Learning From Failure', description: 'How well does your team learn from failures rather than repeating them?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Often Repeats', maxLabel: 'Always Learns' },
+    { id: 'collectiveStressConfidence', title: 'Collective Stress Confidence', description: 'How confident does your team feel when handling collective stress?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Confident', maxLabel: 'Very Confident' },
+    { id: 'failureExample', title: 'A Team Failure Worth Sharing', description: 'Describe a recent team mistake or failure and what your team learned (or could have learned) from it.', type: 'textarea' as const, placeholder: 'What happened, and what was the learning opportunity?' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -229,7 +233,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ iStatementPractice: '', activeListeningPlan: '', feedbackAction: '' });
+  const [goals, setGoals] = useState({ failureSharingMoment: '', psychologicalSafetyAction: '', resilientTeamVision: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -237,9 +241,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'iStatementPractice', title: "Practise 'I' Statements", description: "Where will you practise using 'I' statements this week?", type: 'text' as const, placeholder: 'e.g., In the next disagreement with a colleague' },
-    { id: 'activeListeningPlan', title: 'Active Listening Plan', description: 'How will you demonstrate active listening this week?', type: 'textarea' as const, placeholder: 'Describe the specific techniques you will use...' },
-    { id: 'feedbackAction', title: 'Feedback Goal', description: 'What feedback will you give or request this week?', type: 'text' as const, placeholder: 'e.g., Ask my manager for feedback on my presentation style' },
+    { id: 'failureSharingMoment', title: 'A Failure Worth Sharing', description: 'Describe a recent mistake or failure you could share with the team as a learning moment.', type: 'textarea' as const, placeholder: 'What happened, what you learned, and how sharing it could help your team...' },
+    { id: 'psychologicalSafetyAction', title: 'Making It Safe to Be Open', description: 'What will you do this week to show your team it is safe to be open?', type: 'text' as const, placeholder: 'e.g., Share a mistake of my own in the next team meeting' },
+    { id: 'resilientTeamVision', title: 'Your Resilient Team Vision', description: 'What does a resilient, trusting team look like for you in 12 weeks?', type: 'textarea' as const, placeholder: 'Describe what you would see, hear, and feel differently in your team...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -295,16 +299,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You have the tools for clearer, more empathetic communication. Use them in every conversation.
+          A team that shares failures and supports each other is a team that keeps getting stronger.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: "Use an 'I' statement today", desc: 'Find a real opportunity to practise' },
-            { num: '2', title: 'Listen actively in your next meeting', desc: 'Summarise back what you hear' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Stress Management' },
+            { num: '1', title: 'Share one learning from a recent mistake with a teammate this week', desc: 'Go first — your openness gives others permission to do the same' },
+            { num: '2', title: 'Notice moments when your team handles stress well — acknowledge them', desc: 'Naming what is working reinforces the behaviour' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Communication and Trust`, desc: 'Next you\'ll build on this foundation with deeper communication skills' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

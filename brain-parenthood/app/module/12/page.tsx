@@ -41,8 +41,8 @@ export default function Module12Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 12: Anger Management</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 12 &bull; Managing anger and resolving conflict</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 12: Final Wrap-Up</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 12 &bull; Final reflection, celebration, and planning continuous Brain Parenting</p>
         </div>
       </div>
 
@@ -85,24 +85,26 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Anger Management</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Comprehensive anger management and conflict resolution for lasting change</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Wrap-Up & Beyond</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>You made it — now celebrate, reflect, and plan what comes next</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Anger is a natural human emotion — but when left unmanaged, it can damage relationships,
-          derail careers, and undermine the trust you have worked hard to build. This final module
-          brings together everything you have learned throughout the programme and applies it to
-          one of the most challenging emotional experiences: anger in a high-stakes environment.
-          You will leave equipped for lasting emotional regulation.
+          Twelve weeks ago your team started something ambitious. This final module is about
+          honouring that journey. You will run a final reflection meeting where each person shares
+          the personal changes they have noticed and the team improvements they have observed.
+          You will also look at real business outcomes — what has actually changed? Finally, you
+          will plan how to keep nurturing your team's collective brain going forward. The app moves
+          into maintenance mode: periodic check-ins, long-term habit tracking, and a record of
+          everything you built together.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Cover</h3>
         <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will identify your personal anger triggers, learn evidence-based de-escalation
-          techniques, and build a concrete conflict resolution plan you can draw on in any
-          situation. This is the culmination of 12 weeks of growth — your final commitment to
-          being a calmer, more effective, and more resilient leader.
+          You will reflect on how the team has transformed since Week 1 and identify the habits
+          worth keeping. You will plan a team celebration to mark the achievement, and you will
+          design your approach to continuous "Brain Parenting" — the ongoing practice of keeping
+          your team's collective brain healthy long after this programme ends.
         </p>
       </div>
 
@@ -114,9 +116,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Unmanaged Anger Damages Relationships:', body: 'One outburst can undo months of trust-building' },
-              { title: 'Conflict Resolution Skills Are Lifelong Assets:', body: 'The ability to navigate conflict constructively is invaluable' },
-              { title: 'Emotional Regulation Improves Wellbeing:', body: 'Calmer leaders make better decisions and inspire more confidence' },
+              { title: 'Celebration Cements Growth:', body: 'Marking the achievement makes it real and reinforces what you built' },
+              { title: 'Reflection Reveals the Full Distance Travelled:', body: 'Looking back from Week 12 shows changes that were invisible week to week' },
+              { title: 'A Plan for What Comes Next Prevents Regression:', body: 'Without intention, even the best habits fade — design your maintenance now' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -133,9 +135,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              'Identify your personal anger triggers with precision',
-              'Learn and practise de-escalation techniques',
-              'Build a personal conflict resolution plan',
+              'Reflect on team transformation from Week 1 to now',
+              'Plan a team celebration to mark the achievement',
+              'Design your approach to continuous Brain Parenting',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -157,7 +159,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ angerInMoment: 5, deEscalation: 5, triggerAwareness: 5, constructiveExpression: 5, angerReaction: '' });
+  const [formData, setFormData] = useState({ teamTransformation: 5, conflictHandling: 5, habitSustainability: 5, independentConfidence: 5, biggestAchievement: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -165,11 +167,11 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'angerInMoment', title: 'Managing Anger in the Moment', description: 'How well do you manage anger when it flares up in the moment?', type: 'slider' as const, min: 1, max: 10, minLabel: 'React Impulsively', maxLabel: 'Stay In Control' },
-    { id: 'deEscalation', title: 'De-Escalating Conflict', description: 'How quickly can you de-escalate a conflict situation?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Escalate Further', maxLabel: 'De-escalate Quickly' },
-    { id: 'triggerAwareness', title: 'Anger Trigger Awareness', description: 'How aware are you of what specifically triggers your anger?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Aware', maxLabel: 'Fully Aware' },
-    { id: 'constructiveExpression', title: 'Constructive Expression of Anger', description: 'How constructively do you express anger when you feel it?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Destructively', maxLabel: 'Very Constructively' },
-    { id: 'angerReaction', title: 'Your Typical Anger Reaction at Work', description: 'Describe how you typically react when you feel angry at work.', type: 'textarea' as const, placeholder: 'Be honest — what happens in your body, your words, and your behaviour?' },
+    { id: 'teamTransformation', title: 'Team Transformation', description: 'How different does your team feel compared to Week 1?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Feels the Same', maxLabel: 'Completely Transformed' },
+    { id: 'conflictHandling', title: 'Conflict and Anger Handling', description: 'How well do you handle anger and conflict now compared to when you started?', type: 'slider' as const, min: 1, max: 10, minLabel: 'No Better', maxLabel: 'Much Better' },
+    { id: 'habitSustainability', title: 'Habit Sustainability', description: 'How sustainable do the habits you have built feel going forward?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Fragile', maxLabel: 'Deeply Embedded' },
+    { id: 'independentConfidence', title: 'Independent Team Confidence', description: 'How confident is your team in its collective ability to face challenges independently?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Not Confident', maxLabel: 'Fully Confident' },
+    { id: 'biggestAchievement', title: 'Biggest Team Achievement', description: 'What is the most important thing the team has achieved together in this programme?', type: 'textarea' as const, placeholder: 'Think about shifts in culture, relationships, habits, or business outcomes...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -230,7 +232,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ angerTrigger: '', deEscalationTechnique: '', conflictPlan: '' });
+  const [goals, setGoals] = useState({ continuousBrainParenting: '', teamCelebration: '', sixMonthVision: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -238,9 +240,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'angerTrigger', title: 'Anger Trigger to Work On', description: 'What anger trigger will you focus on managing this week?', type: 'text' as const, placeholder: 'e.g., Feeling ignored in meetings — I will pause and breathe before reacting' },
-    { id: 'deEscalationTechnique', title: 'De-Escalation Technique', description: 'What de-escalation technique will you practise this week?', type: 'textarea' as const, placeholder: 'Describe the technique and how you plan to use it in a real situation...' },
-    { id: 'conflictPlan', title: 'Next Conflict Resolution Plan', description: 'How will you handle the next conflict constructively?', type: 'text' as const, placeholder: 'e.g., Take a break, name my feelings, use \'I\' statements, seek understanding first' },
+    { id: 'continuousBrainParenting', title: 'Continuous Brain Parenting', description: 'How will your team continue nurturing its "collective brain" after this programme?', type: 'textarea' as const, placeholder: 'Think about regular rituals, check-ins, or practices you will keep going...' },
+    { id: 'teamCelebration', title: 'Team Celebration', description: 'What team celebration or acknowledgement will you organise to mark completing the programme?', type: 'text' as const, placeholder: 'e.g., A team dinner, a shared reflection session, a small reward for everyone' },
+    { id: 'sixMonthVision', title: 'Six-Month Vision', description: 'What does success look like for your team in 6 months from now?', type: 'textarea' as const, placeholder: 'Be specific — what will be different about how the team works, communicates, and feels?' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -295,10 +297,10 @@ function CompleteStep({ moduleId }: { moduleId: number }) {
           <span style={{ color: 'white', fontSize: '24px' }}>✓</span>
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>
-          Program Complete!
+          Program Complete! 🎉
         </h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You have completed all 12 modules of Brain Parenthood. You are a more resilient, self-aware, and effective leader. This is just the beginning.
+          Twelve weeks. Twelve modules. A completely different team. What you have built here is real — now keep nurturing it.
         </p>
       </div>
 
@@ -306,9 +308,9 @@ function CompleteStep({ moduleId }: { moduleId: number }) {
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Reflect on your 12-week journey', desc: 'Look back at where you started and how far you have come' },
-            { num: '2', title: 'Share what you have learned', desc: 'Your growth can inspire and support those around you' },
-            { num: '3', title: 'Keep the habits alive', desc: 'Return to any module whenever you need a refresher or boost' },
+            { num: '1', title: 'Organise your team celebration', desc: 'Acknowledge the achievement together — you all earned it' },
+            { num: '2', title: 'Share your final reflections with the group', desc: 'Run your final reflection meeting and let everyone speak' },
+            { num: '3', title: 'Keep going — use the app in maintenance mode', desc: 'Periodic check-ins and long-term tracking to stay accountable' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>

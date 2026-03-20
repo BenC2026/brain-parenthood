@@ -42,8 +42,8 @@ export default function Module7Page() {
           <Link href="/modules" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontWeight: '500', marginBottom: '24px', textDecoration: 'none', fontSize: '14px' }}>
             ← Back to Modules
           </Link>
-          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 7: Parenting</h1>
-          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Week 7 &bull; Positive parenting and work-life integration</p>
+          <h1 style={{ fontSize: '36px', fontWeight: 'bold', color: 'white', marginBottom: '8px' }}>Module 7: Psychological Safety Rituals</h1>
+          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '18px' }}>Weeks 6&ndash;7 &bull; Building habits that create ongoing trust and openness</p>
         </div>
       </div>
 
@@ -86,23 +86,34 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
   return (
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Parenting</h2>
-        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Positive parenting techniques and work-life integration</p>
+        <h2 style={{ fontSize: '28px', fontWeight: 'bold', color: '#111827', marginBottom: '12px' }}>Psychological Safety Rituals</h2>
+        <p style={{ fontSize: '16px', color: '#6B7280', marginBottom: '24px', lineHeight: '1.6' }}>Small, consistent habits that make your team feel safe to speak up</p>
         <p style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
-          Balancing the demands of building a startup with the responsibilities of family life is
-          one of the hardest challenges entrepreneurs face. This module explores how positive
-          parenting principles and intentional work-life integration can help you show up fully
-          at work and at home — without burning out in either place.
+          Communication skills and good intentions only go so far. What turns a team from
+          occasionally trusting to consistently safe is ritual — small, repeatable habits
+          that signal every day that openness is welcome here. This module introduces four
+          psychological safety rituals from the programme that you can start using immediately,
+          regardless of your role or team size.
         </p>
       </div>
 
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px', boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>What You'll Learn</h3>
-        <p style={{ fontSize: '15px', color: '#6B7280', lineHeight: '1.7' }}>
-          You will explore positive parenting and caregiving techniques rooted in empathy and
-          connection, learn how to set healthy boundaries between work and home life, and develop
-          strategies to strengthen communication within your family while managing professional demands.
-        </p>
+        <h3 style={{ fontSize: '20px', fontWeight: '600', color: '#111827', marginBottom: '12px' }}>The Four Rituals</h3>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          {[
+            { num: '1', title: 'Emotional Check-ins', body: 'Begin every meeting with a quick "how is everyone doing?" — two minutes that change the whole tone.' },
+            { num: '2', title: 'Kudos and Appreciation', body: 'Routinely acknowledge successes and teammates who helped — recognition builds belonging.' },
+            { num: '3', title: 'Team Agreements', body: 'Create a short list of team norms everyone commits to — shared expectations reduce friction and ambiguity.' },
+            { num: '4', title: 'Leadership Modelling', body: 'Leaders show vulnerability and openness first — when the leader goes first, the team follows.' },
+          ].map((item) => (
+            <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+              <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <span style={{ color: '#4F46E5', fontSize: '12px', fontWeight: '600' }}>{item.num}</span>
+              </div>
+              <p style={{ color: '#374151', fontSize: '14px', lineHeight: '1.6', paddingTop: '4px' }}><strong style={{ color: '#111827' }}>{item.title}:</strong> {item.body}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div style={{ display: 'flex', gap: '40px', marginBottom: '40px' }}>
@@ -113,9 +124,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              { title: 'Healthy Family Dynamics Support Mental Health:', body: 'A strong home base fuels professional resilience' },
-              { title: 'Work-Life Balance Improves Performance:', body: 'Rest and connection recharge your leadership capacity' },
-              { title: 'Parenting Skills Build Emotional Intelligence:', body: 'The empathy you practise at home transfers to work' },
+              { title: 'Rituals Outlast Good Intentions:', body: 'Habits embedded in meetings keep happening even under pressure' },
+              { title: 'Safety Unlocks Honest Conversations:', body: 'People share problems earlier when they know it is safe to do so' },
+              { title: 'Leaders Set the Tone:', body: 'One act of vulnerability from a leader gives the whole team permission' },
             ].map((item, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#4F46E5', marginTop: '8px', flexShrink: 0 }} />
@@ -132,9 +143,9 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
-              'Learn positive parenting techniques grounded in empathy',
-              'Improve work-life integration with clear boundaries',
-              'Strengthen family communication and connection',
+              'Assess your team\'s current level of psychological safety and openness',
+              'Understand the four rituals and choose one to introduce this week',
+              'Draft team agreements and commit to modelling vulnerability as a leader',
             ].map((obj, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#9CA3AF', marginTop: '8px', flexShrink: 0 }} />
@@ -156,7 +167,7 @@ const OverviewStep = memo(function OverviewStep({ onNext, isCompleted }: { onNex
 
 const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [formData, setFormData] = useState({ workFamilyBalance: 5, parentingApproach: 5, workHomeBoundaries: 5, homeSupport: 5, balanceChallenge: '' });
+  const [formData, setFormData] = useState({ psychologicalSafety: 5, acknowledgingContributions: 5, teamNorms: 5, leaderVulnerability: 5 });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'assessment');
@@ -164,11 +175,10 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
   }, [moduleId]);
 
   const questions = [
-    { id: 'workFamilyBalance', title: 'Work and Family Balance', description: 'How well do you balance your work and family responsibilities?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Work Dominates Everything', maxLabel: 'Well Balanced' },
-    { id: 'parentingApproach', title: 'Parenting or Caregiving Approach', description: 'How positive and connected is your parenting or caregiving approach?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Often Reactive', maxLabel: 'Consistently Positive' },
-    { id: 'workHomeBoundaries', title: 'Work-Home Boundaries', description: 'How effectively do you set boundaries between work and home?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Work Bleeds Into Home', maxLabel: 'Clear Healthy Boundaries' },
-    { id: 'homeSupport', title: 'Home Support', description: 'How supported do you feel at home in managing your responsibilities?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Feel Unsupported', maxLabel: 'Strongly Supported' },
-    { id: 'balanceChallenge', title: 'Your Biggest Balance Challenge', description: 'Describe your biggest challenge in balancing work and personal responsibilities.', type: 'textarea' as const, placeholder: 'What makes this balance difficult for you?' },
+    { id: 'psychologicalSafety', title: 'Team Psychological Safety', description: 'How psychologically safe does your team feel to speak up without fear?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Very Unsafe', maxLabel: 'Completely Safe' },
+    { id: 'acknowledgingContributions', title: 'Acknowledging Contributions', description: 'How often does your team acknowledge each other\'s contributions?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Rarely', maxLabel: 'Consistently' },
+    { id: 'teamNorms', title: 'Clarity of Team Norms', description: 'How clearly are your team\'s norms and expectations defined?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Vague or Unspoken', maxLabel: 'Clear and Agreed' },
+    { id: 'leaderVulnerability', title: 'Leadership Modelling Openness', description: 'How openly do leaders in your team model vulnerability?', type: 'slider' as const, min: 1, max: 10, minLabel: 'Never', maxLabel: 'Consistently' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -179,7 +189,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
   const handleNext = () => { const _labeled = questions.map(q => ({ title: q.title, answer: formData[q.id as keyof typeof formData] })); localStorage.setItem(`brainParenthood_module${moduleId}_assessment`, JSON.stringify({ ...formData, _labeled })); if (currentQuestion < questions.length - 1) { setCurrentQuestion(currentQuestion + 1); } else { saveModuleAnswers(moduleId, 'assessment', { ...formData, _labeled }); onNext(); } };
   const handlePrevious = () => { if (currentQuestion > 0) { setCurrentQuestion(currentQuestion - 1); } else { onBack(); } };
-  const isAnswered = () => { const v = formData[currentQ.id as keyof typeof formData]; if (currentQ.type === 'slider') return true; return (v as string) !== ''; };
+  const isAnswered = () => true; // all questions are sliders
 
   return (
     <div style={{ maxWidth: '700px', margin: '0 auto' }}>
@@ -211,10 +221,6 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
               </div>
             </div>
           )}
-          {currentQ.type === 'textarea' && (
-            <textarea value={formData[currentQ.id as keyof typeof formData] as string} onChange={(e) => setFormData({ ...formData, [currentQ.id]: e.target.value })} placeholder={currentQ.placeholder} rows={5}
-              style={{ width: '100%', padding: '16px 20px', fontSize: '15px', color: '#111827', border: '2px solid #E5E7EB', borderRadius: '12px', outline: 'none', resize: 'none', lineHeight: '1.6', boxSizing: 'border-box' }} />
-          )}
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '24px', borderTop: '1px solid #E5E7EB' }}>
           <button onClick={handlePrevious} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 20px', color: '#374151', fontWeight: '600', borderRadius: '12px', border: 'none', cursor: 'pointer', backgroundColor: 'transparent', fontSize: '15px' }}>← Back</button>
@@ -229,7 +235,7 @@ const AssessmentStep = memo(function AssessmentStep({ onNext, onBack, moduleId }
 
 function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: () => void; moduleId: number }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [goals, setGoals] = useState({ workHomeBoundary: '', parentingTechnique: '', integrationPlan: '' });
+  const [goals, setGoals] = useState({ firstRitual: '', teamAgreements: '', vulnerabilityAction: '' });
 
   useEffect(() => {
     const saved = getModuleAnswers(moduleId, 'goals');
@@ -237,9 +243,9 @@ function GoalsStep({ onNext, onBack, moduleId }: { onNext: () => void; onBack: (
   }, [moduleId]);
 
   const questions = [
-    { id: 'workHomeBoundary', title: 'Work-Home Boundary', description: 'What boundary will you set between work and home this week?', type: 'text' as const, placeholder: 'e.g., No work calls after 7pm on weekdays' },
-    { id: 'parentingTechnique', title: 'Positive Parenting or Caregiving Technique', description: 'What positive parenting or caregiving technique will you try this week?', type: 'textarea' as const, placeholder: 'Describe the technique and when you will apply it...' },
-    { id: 'integrationPlan', title: 'Work-Life Integration Plan', description: 'How will you improve your work-life integration this week?', type: 'text' as const, placeholder: 'e.g., Block two evenings as family time in my calendar' },
+    { id: 'firstRitual', title: 'Your First Ritual', description: 'Which psychological safety ritual will you introduce to your team first?', type: 'text' as const, placeholder: 'e.g., Start every stand-up with a 2-minute emotional check-in' },
+    { id: 'teamAgreements', title: 'Team Agreements Draft', description: 'Write 3 team agreements you would like everyone to commit to.', type: 'textarea' as const, placeholder: 'e.g.\n1. We assume good intent before reacting\n2. We speak up early when something feels wrong\n3. We celebrate effort, not just outcomes' },
+    { id: 'vulnerabilityAction', title: 'Modelling Openness This Week', description: 'How will you personally model openness or vulnerability for your team this week?', type: 'textarea' as const, placeholder: 'Describe the specific moment or action you will use to go first...' },
   ];
 
   const currentQ = questions[currentQuestion];
@@ -295,16 +301,16 @@ function CompleteStep({ moduleId, nextModuleId }: { moduleId: number; nextModule
         </div>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', color: 'white', marginBottom: '12px' }}>Module {moduleId} Complete!</h2>
         <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.8)', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6' }}>
-          You are investing in both your professional success and your family's wellbeing. These two things are not in conflict — they reinforce each other.
+          Safety is not a one-time conversation — it is built ritual by ritual, meeting by meeting. You have what you need to start.
         </p>
       </div>
       <div style={{ backgroundColor: 'white', borderRadius: '16px', padding: '40px', border: '1px solid #E5E7EB', marginBottom: '40px' }}>
         <h3 style={{ fontWeight: '600', color: '#111827', fontSize: '20px', marginBottom: '24px' }}>What's Next?</h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
           {[
-            { num: '1', title: 'Set your boundary today', desc: 'Tell your family or team about it so they can support you' },
-            { num: '2', title: 'Try your parenting technique', desc: 'Apply it in the next appropriate moment' },
-            { num: '3', title: `Prepare for Module ${nextModuleId}`, desc: 'Positive Attitude' },
+            { num: '1', title: 'Introduce one psychological safety ritual in your next team meeting', desc: 'Start small — even a 2-minute check-in changes the tone' },
+            { num: '2', title: 'Share your team agreements draft with the group for feedback', desc: 'Getting input makes the agreements feel owned, not imposed' },
+            { num: '3', title: `Prepare for Module ${nextModuleId} — Innovation and Growth Mindset`, desc: 'With a safer team climate, you\'re ready to unlock creative potential' },
           ].map((item) => (
             <div key={item.num} style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
               <div style={{ width: '28px', height: '28px', borderRadius: '8px', backgroundColor: '#EEF2FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
